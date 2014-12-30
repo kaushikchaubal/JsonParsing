@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<ivy-module version="1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+	<info organisation="brs" module="TaskTracker" />
+	<configurations>
+		<conf name="default" description="Default configuration" />
+		<conf name="runtime" description="The configuration needed for runtime"
+			extends="default" />
+		<conf name="compile" description="The configuration needed to compile"
+			extends="default" />
+		<conf name="test" description="The configuration needed to run the tests"
+			extends="compile" />
+		<conf name="sources" description="Source files configuration" />
+	</configurations>
+	<dependencies>
+		<dependency org="org.codehaus.jackson" name="jackson-mapper-asl" rev="1.5.0"/>
+	</dependencies>
+</ivy-module>
